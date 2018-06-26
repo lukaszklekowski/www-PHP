@@ -1,0 +1,79 @@
+//**********GRID**********
+$numberOfColumns      : 6;
+$grid-padding         : 0;
+$grid-spacing         : 0.5em;
+$gutter               : 1.0;
+$margin-right         : 1%;
+
+//**********FONT**********
+$headerFont           : 'Lato', sans-serif;
+$menuFont             : 'Open Sans Condensed', sans-serif;
+$siteNameFontSize     : 50px;
+$siteNameFontSizeMobile: 35px;
+$siteDescFontSize     : 20px;
+$siteDescFontSizeMobile: 14px;
+$nickFontSize         : 25px;
+$nickFontSizeMobile   : 20px;
+$dateFontSize         : 12px;
+$dateFontSizeMobile   : 10px;
+$dataFontSize         : 15px;
+$dataFontSizeMobile   : 13px;
+$addComentFontSize    : 1rem;
+$addComentFontSizeMobile: 14px;
+$semesterFontSize      : 35px;
+$semesterFontSizeMobile: 30px;
+$yearfontSize         : 20px;
+$yearfontSizeMobile   : 15px;
+$showSubjectFontSize  : 20px;
+$showSubjectFontSizeMobile : 16px;
+
+
+//*******MEDIA WIDTH********
+$m-l-breakpoint       : 900px;
+$s-m-breakpoint       : 640px;
+
+//**********HEADER**********
+$headerHeight         : 260px;
+$headerHeightMobile   : 200px;
+
+//*******IMAGES URL*********
+$headerimage          : url("../../photos/ser.png");
+$background1img       : url("../../photos/salawyk3.png");
+$background2img       : url("../../photos/salakomp1.png");
+
+//*********COLORS***********
+$headerDim            : rgba(0,0,0,.8);
+$menuDim              : rgba(255,255,255,.15);
+$headerFontColor      : white;
+$bodyColor            : #bfbfbf;
+$commentsColor        : #a3a3a3;
+$containerColor       : #e2e2e2;
+$imageBackground      : white;
+$mobNavColor          : black;
+$dropMenuColor        : white;
+
+//*****MARGINS & PADDING*****
+$headContainerMargin  : 40px auto;
+$siteNameMarginBottom : 30px;
+$siteDescMargin       : 0 auto;
+$commentsPadding      : 20px;
+$commentsMargin       : 20px;
+$commentsPaddingMobile: 15px;
+$commentsMarginMobile : 15px;
+$nickMargin           : 0 10px 5px;
+$dateMargin           : 0 10px 20px;
+$dateMarginMobile     : 0 10px 15px;
+$dataMargin           : 0 10px 10px;
+$collMargin           : 10px;
+
+
+//******WIDTH & HEIGHT******
+$dimHeight            : 100%;
+$headContainerWidth   : 100%;
+$siteDescWidthMobile  : 220px;
+$siteDescWidth        : 300px;
+$menuItemWidth        : 180px;
+$menuItemWidthMobile  : 100px;
+$containerWidth       : 850px;
+$containerMediumWidth : 80%;
+$containerSmallWidth  : 95%;

@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css?family=Lato');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300');
+body {
+    background-color: $bodyColor;
+}
+
+.body-container{
+  font-family: $headerFont;
+  width: $containerSmallWidth;
+  margin: 10px auto 10px;
+  background-color: $containerColor;
+  border: 1px solid #b1b1b1;
+}
+
+.error{
+  font-size: 14px;
+  margin: 10px auto;
+  text-align: center;
+}
+
+.image{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding:50px 0 20px;
+}
+.image > img{
+  background-color: $imageBackground;
+  border-radius: 50%;
+  border: 1px solid #c1c1c1;
+}
+.content{
+  padding: 30px 40px;
+}
+.content p {
+  line-height: 25px;
+  text-align: center;
+  color: black;
+}
+
+@media screen and (min-width:$s-m-breakpoint){
+  .error{
+    font-size: 16px;
+    margin: 15px auto;
+  }
+  .content{
+    font-size: 17px;
+  }
+  .body-container{
+    width: $containerMediumWidth;
+  }
+}
+
+@media screen and (min-width:$m-l-breakpoint){
+  .body-container{
+    width: $containerWidth;
+  }
+}

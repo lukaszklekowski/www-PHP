@@ -1,0 +1,37 @@
+
+.row:after {
+  display: block;
+  clear: both;
+  content: '';
+}
+
+// .row {
+//   @extend clearfix;
+//   & + & {
+//     margin-top : $grid-spacing;
+//   }
+// }
+
+[class*='col-'] {
+  float: left;
+  width: 100%;
+  min-height: 1px;
+  margin : 0;
+}
+
+
+@media only screen and (min-width : $s-m-breakpoint){
+  [class*='col-'] {margin-right: $gutter * 1%;}
+  @if $grid-padding != 0 {
+    [class*='col-'] {padding: $grid-padding;}
+  }
+  [class*='col-']:last-of-type {margin-right: 0;}
+
+  $c : (100 - ($numberOfColumns - 1) * $gutter)/$numberOfColumns;
+
+  @for $i from 1 through $numberOfColumns {
+    .col-#{$i}-#{$numberOfColumns} {
+       width: ($c * $i + $gutter * ($i - 1) ) * 1%;
+    }
+  }
+}

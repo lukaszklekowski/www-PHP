@@ -1,0 +1,22 @@
+propel:
+  database:
+      connections:
+          webdb:
+              adapter: pgsql
+              settings:
+                  charset: utf8
+                  queries:
+                      utf8: "SET NAMES 'UTF8'"
+              classname: \Propel\Runtime\Connection\ConnectionWrapper
+              dsn: pgsql:host=localhost;port=5432;dbname=webdb;user=postgres;password=postgres
+              user: postgres
+              password: postgres
+              attributes:
+  runtime:
+      defaultConnection: webdb
+      connections:
+          - webdb
+  generator:
+      defaultConnection: webdb
+      connections:
+          - webdb

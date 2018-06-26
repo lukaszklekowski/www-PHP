@@ -1,0 +1,80 @@
+.comen{
+  font-size: $addComentFontSizeMobile;
+  margin: $commentsMarginMobile;
+  padding: $commentsPaddingMobile;
+  border: 1px solid #b3bcb6;
+  background-color: $bodyColor;
+}
+.type-nick{
+  margin: 15px 0 10px;
+  text-align: center;
+}
+.type-data{
+  margin-top:15px;
+}
+.captcha-desc{
+  text-align: center;
+}
+.nick{
+  margin: $nickMargin;
+  font-size: $nickFontSizeMobile;
+}
+.date{
+  margin: $dateMarginMobile;
+  font-size: $dateFontSizeMobile;
+}
+.data{
+  margin: $dataMargin;
+  font-size: $dataFontSizeMobile;
+}
+.comments{
+  padding-top: 10px;
+  margin-bottom: 10px;
+  background-color: $commentsColor;
+  border: 1px solid #848484;
+}
+.comments:last-child{
+  margin-bottom: 0px;
+}
+.result{
+  width: 100px;
+  margin:auto;
+  display: block;
+  text-align: center;
+}
+
+.form-row{
+  margin: 10px 0;
+}
+label{
+  display: inline-block;
+}
+textarea{
+  width: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  resize: none;
+  margin: 10px 0 20px;
+}
+@media screen and (min-width: $s-m-breakpoint) {
+  .comen{
+    font-size: $addComentFontSize;
+  }
+  .type-nick{
+    margin: 20px 0 20px;
+  }
+  .type-data{
+    margin-top:20px;
+  }
+  .nick{
+    font-size: $nickFontSize
+  }
+  .date{
+    margin: $dateMargin;
+    font-size: $dateFontSize;
+  }
+  .data{
+    font-size: $dataFontSize;
+  }
+}

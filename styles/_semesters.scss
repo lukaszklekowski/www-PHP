@@ -1,0 +1,134 @@
+
+.semester{
+  margin: 30px 0 15px;
+  text-align: center;
+  font-size: $semesterFontSizeMobile;
+}
+
+.year{
+  margin: 0;
+  text-align: center;
+  font-size: $yearfontSizeMobile;
+}
+
+.show-subject{
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  margin: 1rem auto 0;
+  display: inline-block;
+  width: 100%;
+  font-size: $showSubjectFontSizeMobile;
+}
+
+.show-subject:hover{
+  cursor: pointer;
+}
+
+input[type=checkbox] {
+   display: none;
+}
+
+.subject {
+  max-height: 0;
+  overflow: hidden;
+   background: #f4f4f4;
+   border-left: 1px solid #b1b1b1;
+   border-right: 1px solid #b1b1b1;
+   border-bottom: 1px solid #b1b1b1;
+   transition: max-height 0.5s ease-in-out;
+}
+
+input[type=checkbox]:checked ~ .subject {
+  max-height: 500px;
+}
+
+@mixin Background($url) {
+  background-position: 10% 0px;
+  background-repeat: no-repeat;
+  background-image: $url;
+}
+
+.background-1{
+  @include Background($background1img)
+}
+
+.background-2{
+  @include Background($background2img)
+}
+
+[class*='coll-'] {
+  text-align: left;
+  color: black;
+  background-color: #bababa;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 0 0 8px;
+  font-size: 15px;
+  margin-left: $collMargin;
+  margin-right: $collMargin;
+}
+
+.label-title{
+  padding: 0 10px;
+  background-color: #969696;
+}
+
+.label-title h5{
+  text-align: center;
+  padding: 10px 0;
+  color: black;
+  font-size: 16px;
+}
+
+.label-content{
+    font-size: 14px;
+    padding: 10px 10px 0 20px;
+}
+
+.label-content li{
+  list-style: initial;
+  margin-bottom: 5px;
+}
+
+.hobby-semseters{
+  background-color:  #969696;
+  margin:1rem auto 0;
+  display: inline-block;
+  width: 100%;
+  font-size: 20px;
+}
+
+.hobby-semseters a{
+  border-bottom: 1px solid #dddddd;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  font-size: 15px;
+  text-align: center;
+}
+
+@media screen and (min-width: 640px) {
+  .semester{
+    font-size: $semesterFontSize;
+  }
+  .coll-left{
+    margin-right: 0px;
+  }
+  .coll-right{
+    margin-left: 0px;
+  }
+  .year{
+    font-size: $yearfontSize;
+  }
+
+  .label-title h5{
+    font-size: 17px;
+  }
+
+  .show-subject{
+    font-size: $showSubjectFontSize;
+  }
+
+}

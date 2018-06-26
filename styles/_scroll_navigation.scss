@@ -1,0 +1,82 @@
+.scroll-nav{
+  top: 0px;
+  display: block;
+  height: 0;
+  width: 100%;
+  visibility: hidden;
+  background-color: $mobNavColor;
+  position: sticky;
+}
+
+.scroll-menu{
+  font-family: $menuFont;
+  display: table;
+  list-style: none;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.scroll-menu-item{
+  min-width:$menuItemWidthMobile;
+  float: left;
+  text-transform: uppercase;
+  font-size: 13px;
+  text-align: center;
+  border-right:1px solid rgba(255,255,255,.2);
+}
+
+.scroll-menu-item a{
+  font-weight: 700;
+  width: 100%;
+  display: inline-block;
+  color: $dropMenuColor;
+  padding: 13px 0;
+  text-decoration: none;
+}
+
+.scroll-menu-item:last-child{
+    border-right: 0;
+}
+
+.scroll-menu-item:hover{
+  cursor: pointer;
+}
+
+.scroll-dropdown-content a:hover {
+  background-color: #f1f1f1
+}
+
+.scroll-menu-item:hover .scroll-dropdown-content {
+    max-height: 300px;
+}
+
+.scroll-dropdown-content {
+    max-height: 0;
+    overflow: hidden;
+    position: absolute;
+    background-color: $dropMenuColor;
+    min-width: $menuItemWidthMobile;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    transition: max-height 0.5s ease-in-out;
+}
+
+.scroll-dropdown-content a {
+    border-bottom: 1px solid #dddddd;
+    color: black;
+    padding: 13px 0px;
+    text-decoration: none;
+    display: block;
+    color: black;
+    font-weight: 400;
+}
+
+@media screen and (min-width :$s-m-breakpoint) {
+  .scroll-menu-item{
+    min-width:$menuItemWidth;
+    font-size: 20px;
+  }
+
+  .scroll-dropdown-content {
+      min-width: $menuItemWidth;
+  }
+}

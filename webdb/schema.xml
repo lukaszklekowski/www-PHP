@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database name="webdb" defaultIdMethod="native">
+  <table name="opinion" phpName="Opinion">
+    <column name="id" type="integer" required="true" primaryKey="true" autoIncrement="true"/>
+    <column name="name" type="varchar" size="20" required="true" />
+    <column name="nick" type="varchar" size="50" required="true" />
+    <column name="data" type="varchar" size="1024" required="true" />
+    <column name="created_at" type="timestamp"/>
+
+  </table>
+</database>

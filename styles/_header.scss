@@ -1,0 +1,144 @@
+.head{
+  background-image: $headerimage;
+  height: $headerHeightMobile;
+  position: relative;
+  background-attachment: fixed;
+  background-position: 50% 0px;
+  background-repeat: no-repeat;
+}
+
+.dim {
+  height: $dimHeight;
+  background-color: $headerDim;
+}
+
+.head_container{
+  font-family: $headerFont;
+  position:absolute;
+  top:0;
+  width: $headContainerWidth;
+  margin: $headContainerMargin;
+  text-align: center;
+}
+
+.site_name{
+  margin-bottom: $siteNameMarginBottom;
+  font-size: $siteNameFontSizeMobile;
+  font-weight: 500;
+  color: $headerFontColor;
+}
+
+.site_desc{
+  width: $siteDescWidthMobile;
+  margin: $siteDescMargin;
+  font-size: $siteDescFontSizeMobile;
+  color: $headerFontColor;
+  border-top: 1px solid #DBDBDB;
+}
+
+.site_desc > h3{
+  padding: 15px 0;
+}
+
+.navigation{
+  visibility: hidden;
+}
+
+@media screen and (min-width: $s-m-breakpoint) {
+  .head{
+    height: $headerHeight;
+  }
+
+  .site_name{
+    font-size: $siteNameFontSize;
+  }
+
+  .site_desc{
+    width: $siteDescWidth;
+    font-size: $siteDescFontSize;
+  }
+
+  .site_desc > h3{
+    padding: 25px 0;
+  }
+
+  .navigation{
+    display: block;
+    width: 100%;
+    visibility: visible;
+    background-color: $menuDim;
+    border-top: 1px solid rgba(255,255,255,.2);
+    position: absolute;
+    bottom: 0;
+  }
+
+  .menu{
+    font-family: $menuFont;
+    font-weight: 400;
+    display: table;
+    list-style: none;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  .scroll-menu{
+    font-family: $menuFont;
+    font-weight: 400;
+    display: table;
+    list-style: none;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  .menu_item{
+    min-width:  $menuItemWidth;
+    float: left;
+    text-transform: uppercase;
+    font-size: 20px;
+    text-align: center;
+    border-right:1px solid rgba(255,255,255,.2);
+  }
+
+  .menu_item a{
+    width: 100%;
+    display: inline-block;
+    color: white;
+    padding: 14px 0;
+    text-decoration: none;
+  }
+
+  .menu_item:last-child{
+    border-right: 0;
+  }
+
+  .dropdown-content {
+      max-height: 0;
+      overflow: hidden;
+      position: absolute;
+      background-color: $dropMenuColor;
+      min-width: $menuItemWidth;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      transition: max-height 0.5s ease-in-out;
+  }
+
+  .dropdown-content a {
+      border-bottom: 1px solid #dddddd;
+      color: black;
+      padding: 12px 0;
+      text-decoration: none;
+      display: block;
+  }
+
+  .menu_item:hover{
+    cursor: pointer;
+    background-color: rgba(0,0,0,0.2);
+    transition: background-color, 0.3s;
+  }
+
+  .dropdown-content a:hover {
+    background-color: #f1f1f1;
+  }
+  .menu_item:hover .dropdown-content{
+    max-height: 300px;
+  }
+}
